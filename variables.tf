@@ -206,7 +206,7 @@ variable region_params {
   }
 }
 
-variable "dest_range" {
-  description = "The destination IPv4 address range that this route applies to"
-  default     = "0.0.0.0/0"
+variable "dest_ranges" {
+  description = "The destination IPv4 address ranges that this route applies to"
+  default     = ["0.0.0.0/0"]
 }
